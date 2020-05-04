@@ -1,0 +1,67 @@
+<ion-menu side="end" content-id="main-content">
+    <ion-header>
+      <ion-toolbar translucent>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+          <ion-item>
+              <ion-icon name="person" slot="start"></ion-icon>
+              <ion-label routerLink="/account">Account Settings</ion-label>
+            </ion-item>
+        <ion-item>
+          <ion-icon name="reader" slot="start"></ion-icon>
+          <ion-label>Attendance Report</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="book" slot="start"></ion-icon>
+          <ion-label>Homework Report</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="scan" slot="start"></ion-icon>
+          <ion-label>Scan QR Code</ion-label>
+        </ion-item>
+        <ion-item routerLink="/login">
+          <ion-icon name="lock-open" slot="start"></ion-icon>
+          <ion-label>Log Out</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="end">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title></ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+          <ion-grid style="padding-top: 70px;">
+              <ion-row>
+                  <ion-col size-md="6" offset-md="3">  
+                      <ion-card>
+                          <ion-card-header class="ion-text-center" style="padding-top: 50px;">
+                              <ion-card-title style="font-size: 50px;">HOME</ion-card-title>
+                          </ion-card-header>
+                          <ion-card-content style="padding-left: 60px; padding-right: 60px;">
+                              <div class="ion-text-center">
+                                  <ion-button routerLink="/class-a" id="btn-attendance" style="font-size: 20px;" color="tertiary" expand="block">
+                                      <ion-icon slot="start" name="reader-outline"></ion-icon>Attendance
+                                  </ion-button>
+                              </div>
+                              <div class="ion-text-center" style="padding-top: 8px; padding-bottom: 50px;">
+                                  <ion-button routerLink="/class-a" id="btn-homework" style="font-size: 20px;" color="dark" expand="block">
+                                      <ion-icon slot="start" name="book-outline"></ion-icon>Homework
+                                  </ion-button>
+                              </div>
+                          </ion-card-content>
+                      </ion-card>
+                  </ion-col>
+              </ion-row>
+          </ion-grid>   
+      </ion-content>
+  </div>

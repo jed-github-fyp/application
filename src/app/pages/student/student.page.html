@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>student.page.html</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid style="padding-top: 70px;">
+    <ion-row>
+        <ion-col size-md="6" offset-md="3">  
+            <ion-card>
+                <ion-card-header class="ion-text-center" style="padding-top: 50px;">
+                    <ion-card-title style="font-size: 50px;" color="warning">EDP 3</ion-card-title>
+                </ion-card-header>
+                    <ion-card-content>
+                      <ion-list>
+              
+                        <ion-item routerLink="/attend" button (click)="buttonClick()">
+                          <ion-label>
+                            Jed 
+                          </ion-label>
+                        </ion-item>
+                      
+                        <ion-item routerLink="/work" button (click)="buttonClick()">
+                          <ion-label>
+                            John 
+                          </ion-label>
+                        </ion-item>
+                    
+                        <ion-item routerLink="/subject" button (click)="buttonClick()">
+                          <ion-label class="ion-text-wrap">
+                            Ivan
+                          </ion-label>
+                        </ion-item>
+                    
+                        <ion-item routerLink="/attend2" button (click)="buttonClick()">
+                          <ion-label>
+                            Ben
+                          </ion-label>
+                        </ion-item>
+                      
+                        <ion-item button (click)="buttonClick()">
+                          <ion-label>
+                            Student 5
+                          </ion-label>
+                        </ion-item>
+                    
+                        <ion-item button (click)="buttonClick()">
+                          <ion-label class="ion-text-wrap">
+                            Student 6 With a Very Very Very Very Very Very Very Very Very Long Name
+                          </ion-label>
+                        </ion-item>
+                      </ion-list>
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>   
+</ion-content>

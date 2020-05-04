@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>attend.page.html</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid style="padding-top: 70px;">
+    <ion-row>
+        <ion-col size-md="6" offset-md="3">  
+            <ion-card>
+                <ion-card-header class="ion-text-center" style="padding-top: 50px;">
+                    <ion-card-title style="font-size: 50px;">Attendance</ion-card-title>
+                    <ion-icon name="person-circle-outline" style="font-size: 50px;" color="primary"></ion-icon>
+                    <ion-card-title style="font-size: 30px;" color="primary">Jed</ion-card-title>
+                </ion-card-header>
+
+                <ion-card-content>
+                    <form onsubmit="processForm(event)">
+                    <ion-item>
+                        <ion-label position="floating" style="font-size: 20px;">Date</ion-label>
+                        <ion-datetime displayFormat="YYYY-MM-DDTHH:mm" value="2020-04-15,08:00:20"></ion-datetime>
+                    </ion-item>
+                    <ion-item>
+                      <ion-label position="floating" style="font-size: 20px;">Time</ion-label>
+                      <ion-datetime display-format="h:mm A" picker-format="h:mm A" value="08:00:20"></ion-datetime>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label position="floating" style="font-size: 20px;">Temperature</ion-label>
+                        <ion-input id="input-attendance-temperature" type="text" value="37°C"></ion-input>
+                    </ion-item>
+
+                    <ion-list>
+                      <ion-radio-group>
+                          <ion-list-header>
+                            <ion-label style="font-size: 20px;">Status</ion-label>
+                          </ion-list-header>                          
+                            <ion-item>
+                              <ion-label><ion-text style="font-weight: bold;" color="success">Attended</ion-text></ion-label>
+                              <ion-radio value="/" color="success" id="rb-attended"></ion-radio>
+                            </ion-item>
+                            <ion-item>
+                              <ion-label><ion-text style="font-weight: bold;" color="danger">Missed</ion-text></ion-label>
+                              <ion-radio value="x" color="danger" id="rb-missed"></ion-radio>
+                            </ion-item>
+                            <ion-item>
+                              <ion-label><ion-text style="font-weight: bold;" color="secondary">Late</ion-text></ion-label>
+                              <ion-radio value="l" color="secondary" id="rb-late"></ion-radio>
+                            </ion-item>                       
+                      </ion-radio-group>
+                    </ion-list>
+                      <div class="ion-text-center" style="padding-bottom: 50px;">
+                        <ion-button routerLink="/menu" id="btn-save7" style="font-size: 20px;" class="ion-margin" type="submit" class="ion-no-margin">Save</ion-button>
+                      </div>
+                    </form>
+                </ion-card-content> 
+            </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>homework2.page.html</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid style="padding-top: 70px;">
+    <ion-row>
+        <ion-col size-md="6" offset-md="3">  
+            <ion-card>
+                <ion-card-header class="ion-text-center" style="padding-top: 50px;">
+                    <ion-card-title style="font-size: 50px;">MATH</ion-card-title>
+                    <ion-icon name="person-circle-outline" style="font-size: 50px;" color="primary"></ion-icon>
+                    <ion-card-title style="font-size: 30px;" color="primary">Ivan</ion-card-title>
+                </ion-card-header>
+
+                <ion-card-content>
+                    <form onsubmit="processForm(event)">
+                      <ion-list lines="full" class="ion-no-margin ion-no-padding">
+                        
+      
+                        <ion-item>
+                          <ion-label position="stacked" style="font-size: 18px;">Notes</ion-label>
+                          <ion-textarea>Status: Completed :)</ion-textarea>
+                        </ion-item>
+                      </ion-list>
+                      
+                      <ion-list>
+                          <ion-item>
+                              <ion-label position="floating" style="font-size: 20px;">New Notes</ion-label>
+                              <ion-input required type="text" oninput="handleTitleValue(event)"></ion-input>
+                            </ion-item>
+                      </ion-list>
+
+                      <div class="ion-text-center" style="padding-bottom: 50px;">
+                        <ion-button routerLink="/menu" id="btn-save7" style="font-size: 20px;" class="ion-margin" type="submit" class="ion-no-margin">Save</ion-button>
+                      </div>
+                    </form>
+                </ion-card-content>

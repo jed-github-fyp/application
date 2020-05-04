@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>attend2.page.html</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid style="padding-top: 70px;">
+      <ion-row>
+          <ion-col size-md="6" offset-md="3">  
+              <ion-card>
+                  <ion-card-header class="ion-text-center" style="padding-top: 50px;">
+                      <ion-card-title style="font-size: 50px;">Attendance</ion-card-title>
+                  </ion-card-header>
+                 
+                  <ion-card-content style="padding-left: 60px; padding-right: 60px;">
+                  <div class="ion-text-center">
+
+                     <ion-list>
+                      <ion-list-header>
+                          <ion-label>
+                          
+                          </ion-label>
+                      </ion-list-header>
+
+                      <ion-item>
+                          <ion-label>Status</ion-label>
+                          <ion-select placeholder="Select Class">
+                          <ion-select-option value="f">Attended</ion-select-option>
+                          <ion-select-option value="m">Missed</ion-select-option>
+                          <ion-select-option value="m">Late</ion-select-option>
+                          </ion-select>
+                      </ion-item>
+
+                      <ion-item>
+                          <ion-label position="floating" style="font-size: 20px;">Temperature</ion-label>
+                          <ion-input id="input-attendance-temperature" type="text" value="37°C"></ion-input>
+                      </ion-item>
+
+                      </ion-list>
+                  </div>           
+                  <div class="ion-text-center" style="padding-bottom: 50px;">
+                      <ion-button routerLink="/menu" id="btn-save7" style="font-size: 20px;" class="ion-margin" type="submit" class="ion-no-margin">Save</ion-button>
+                    </div>
+                  </ion-card-content>
+              </ion-card>
+          </ion-col>
+      </ion-row>
+  </ion-grid>   
+</ion-content>

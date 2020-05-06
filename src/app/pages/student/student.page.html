@@ -1,6 +1,13 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>student.page.html</ion-title>
+  <ion-toolbar color="Light-tint">
+    <!-- back icon --> 
+    <ion-button routerLink="/menu" slot="start" fill="clear" color="Light-tint">
+      <ion-icon size="large" color="primary" name="return-up-back"></ion-icon>
+    </ion-button>
+    <!-- home icon -->
+    <ion-button routerLink="/menu" slot="end" fill="clear" color="Light-tint">
+      <ion-icon size="large" color="primary" name="home-outline"></ion-icon>
+    </ion-button>
   </ion-toolbar>
 </ion-header>
 
@@ -15,37 +22,37 @@
                     <ion-card-content>
                       <ion-list>
               
-                        <ion-item routerLink="/attend" button (click)="buttonClick()">
+                        <ion-item routerLink="/attend" >
                           <ion-label>
-                            Jed 
+                            Jed     /...attend
                           </ion-label>
                         </ion-item>
                       
-                        <ion-item routerLink="/work" button (click)="buttonClick()">
+                        <ion-item routerLink="/work" >
                           <ion-label>
-                            John 
+                            John    /...work
                           </ion-label>
                         </ion-item>
                     
-                        <ion-item routerLink="/subject" button (click)="buttonClick()">
+                        <ion-item routerLink="/subject" >
                           <ion-label class="ion-text-wrap">
-                            Ivan
+                            Ivan    /...subject
                           </ion-label>
                         </ion-item>
                     
-                        <ion-item routerLink="/attend2" button (click)="buttonClick()">
+                        <ion-item routerLink="/attend2" >
                           <ion-label>
-                            Ben
+                            Ben     /...attend2
                           </ion-label>
                         </ion-item>
                       
-                        <ion-item button (click)="buttonClick()">
+                        <ion-item >
                           <ion-label>
                             Student 5
                           </ion-label>
                         </ion-item>
                     
-                        <ion-item button (click)="buttonClick()">
+                        <ion-item >
                           <ion-label class="ion-text-wrap">
                             Student 6 With a Very Very Very Very Very Very Very Very Very Long Name
                           </ion-label>
